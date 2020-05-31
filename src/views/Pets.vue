@@ -6,18 +6,17 @@
   </div>
 </template>
 
-
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 
 export default {
-  data() {
+  data () {
     return {
       animal: {}
-    };
+    }
   },
   computed: {
-    ...mapState(["cats", "dogs"])
+    ...mapState(['cats', 'dogs'])
   },
   // methods: {
   //   pet() {
@@ -28,9 +27,9 @@ export default {
   //     return animal
   //   }
   // }
-  mounted() {
-    const animal = this[this.$route.params.species][this.$route.params.id];
-    this.animal = animal;
+  mounted () {
+    const animal = this[this.$route.params.species][this.$route.params.id]
+    this.animal = animal
   }
-};
+}
 </script>

@@ -21,10 +21,10 @@ export default {
   },
   computed: {
     ...mapState(
-        [
-            'dogs'
-        ]
-      )
+      [
+        'dogs'
+      ]
+    )
   }
 }
 </script>
